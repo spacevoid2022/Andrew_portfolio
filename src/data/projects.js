@@ -1,29 +1,20 @@
 export default[
     {
         id: "p1",
-        title: "My Awesome Project 1",
-        description: "A fantastic project showcasing my skills in web development.",
-        image: "/placeholder_project1.png",
-        tags: ["React", "JavaScript", "CSS"],
+        title: "Andrew Atherton's Portfolio",
+        description: "My personal portfolio website showcasing my projects and skills.",
+        image: "/portfolio_screenshot.png", // Placeholder image
+        tags: ["React", "TailwindCSS", "Vite"], // Assuming it uses these now
         demo: "#",
-        repo: "https://github.com/AndrewAtherton/project1"
+        repo: "https://github.com/AndrewAtherton/Andrew_Portfolio" // Your project repo
     },
     {
         id: "p2",
-        title: "My Innovative Project 2",
-        description: "An innovative application solving a real-world problem.",
-        image: "/placeholder_project2.png",
-        tags: ["Python", "Flask", "Machine Learning"],
+        title: "MAL XML Reader",
+        description: "A tool to parse MyAnimeList XML exports and display statistics.",
+        image: "/mal_reader_screenshot.png", // Placeholder image
+        tags: ["Python", "XML", "Data Analysis"], // Example tags
         demo: "#",
-        repo: "https://github.com/AndrewAtherton/project2"
-    },
-    {
-        id: "p3",
-        title: "My Creative Project 3",
-        description: "A creative endeavor demonstrating design and front-end skills.",
-        image: "/placeholder_project3.png",
-        tags: ["HTML", "CSS", "Design"],
-        demo: "#",
-        repo: "https://github.com/AndrewAtherton/project3"
-    },
+        repo: "https://github.com/AndrewAtherton/MAL_XML_Reader" // Example repo
+    }
 ]
