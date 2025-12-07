@@ -1,65 +1,72 @@
-import Navbar from "./components/Navbar";
-import Section from "./components/Section";
-import Carousel from "./components/carousel";
-import ExperienceItem from "./components/ExperienceItem";
-import ProjectCard from "./components/ProjectCard";
+import Navbar from "./components/Navbar.jsx";
+import Section from "./components/Section.jsx";
+import Carousel from "./components/Carousel.jsx";
+import ProjectCard from "./components/ProjectCard.jsx";
+import ExperienceItem from "./components/ExperienceItem.jsx";
+import Footer from "./components/Footer.jsx";
 import projects from "./data/projects.js";
 import experience from "./data/experience.js";
-import Footer from "./components/Footer";
 
 function App() {
+
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar/>
-      <main className="flex-1">
-        <Section id="about" title="About Me">
-          <div className="flex flex-col items-center gap-6">
-            <img 
-              src="/your-photo.jpg" 
-              alt="Andrew Atherton"
-              className="w-56 h-56 rounded-2xl object-cover bg-gray-800 ring-4 ring-neutral-800"
-            />
-            <p className="text-gray-300">
-              Welcome! I'm Andrew, and I'm passionate about web development.
-            </p>
-            <div className={"flex gap-3 pt-2 justify-center"}>
-              <a 
-                href={"#projects"}
-                className={"rounded-xl bg-white/10 px-4 py-2 hover:bg-white/15"}>
-                  Projects
-                </a>
-              <a 
-                href={"#experience"}
-                className={"rounded-xl bg-white/10 px-4 py-2 hover:bg-white/15"}>
-                  Work Experience
-                </a>
+      <div className={"min-h-screen bg-neutral-950 text-neutral-100"}>
+          <Navbar/>
 
-            </div>
-          </div>
-        </Section>
-        <div>
-          {/* Project with carousel */}
-          <Section id="projects" title="Projects" subtitle={"Some of my projects"}>
-            <p className="text-gray-300">Here are some of the projects I've worked on.</p>
+          {/*about */}
+          <Section id="about" title={"About me"}>
+              <div className={"flex flex-col items-center gap-6"}>
+                  <img
+                      src={"/personal_pic.jpg"}
+                      alt={"Andrew Atherton's Profile"}
+                      className={"size-40 rounded-2xl object-cover ring-2 ring-neutral-800"}
+                  />
+                  <div className={"space-y-4 leading-relaxed text-neutral-300"}>
+                      <p>
+                          Hi, I'm <span className={"font-semibold text-white"}>Andrew Atherton</span> a passionate software engineer with a knack for building
+                          efficient, user-friendly web applications. My expertise spans across modern frontend frameworks, backend technologies, and cloud platforms.
+                      </p>
+                      <p>
+                          I am dedicated to crafting high-quality code, optimizing user experiences, and contributing to innovative projects from conception to deployment.
+                      </p>
+                      <div className={"flex gap-3 pt-2 justify-center"}>
+                          <a
+                              href={"#projects"}
+                              className={"rounded-xl bg-white/10 px-4 py-2 hover:bg-white/15"}
+                          >View Projects
+                          </a>
+                          <a
+                              href={"#experience"}
+                              className={"rounded-xl bg-white/10 px-4 py-2 hover:bg-white/5"}
+                          >
+                              Work experiences
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </Section>
 
-            <Carousel>
-              {projects.map((p) => (
-                <ProjectCard key={p.id} project={p} />
-              ))}
-            </Carousel>
+          {/*Pojrects with carousel */}
+          <Section id="projects" title={"Projects"} subtitle={"Some of my recent work"}>
+              <Carousel>
+                  {projects.map((p)=>(
+                      <ProjectCard key={p.id} project={p}/>
+                  ))}
+              </Carousel>
           </Section>
-          {/* Experience Section */}
-          <Section id="experience" title="Experience" subtitle={"My work Experience"}>
-            <div className="space-y-4 text-left">
-              {experience.map((job) => (
-                <ExperienceItem key={job.id} item={job} />
-              ))}
-            </div>
+
+          {/* Experiene */}
+          <Section id={"experience"} title={"Work experience"} subtitle={"My Work Experience"}>
+              <div className={"space-y-4 text-left"}>
+                  {experience.map((job)=>(
+                      <ExperienceItem key={job.id} item={job}/>
+                  ))}
+              </div>
           </Section>
-        </div>
-      </main>
-      <Footer/>
-    </div>
+
+          <Footer/>
+      </div>
+
   )
 }
 

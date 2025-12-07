@@ -1,20 +1,29 @@
-export default [
+export default[
     {
-        id: 1,
-        title: "Portfolio Website",
-        description: "A personal portfolio website to showcase my projects and experience.",
-        image: "/portfolio-screenshot.png",
-        tags: ["React", "Tailwind CSS", "Vite"],
-        demo: "https://andrew-portfolio.com",
-        repo: "https://andrew-portfolio.com"
+        id: "p1",
+        title: "My Awesome Project 1",
+        description: "A fantastic project showcasing my skills in web development.",
+        image: "/placeholder_project1.png",
+        tags: ["React", "JavaScript", "CSS"],
+        demo: "#",
+        repo: "https://github.com/AndrewAtherton/project1"
     },
     {
-        id: 2,
-        title: "MyAnimeList XML Reader",
-        description: "This application allows you to upload an XML export of your MyAnimeList anime list and gain insights into your viewing habits.",
-        image: "/mal-reader-placeholder.png",
-        tags: ["XML", "JavaScript", "HTML", "CSS"],
-        demo: "https://github.com/spacevoid2022/MyAnimeList_XML_Reader.git",
-        repo: "https://github.com/spacevoid2022/MyAnimeList_XML_Reader.git"
-    }
+        id: "p2",
+        title: "My Innovative Project 2",
+        description: "An innovative application solving a real-world problem.",
+        image: "/placeholder_project2.png",
+        tags: ["Python", "Flask", "Machine Learning"],
+        demo: "#",
+        repo: "https://github.com/AndrewAtherton/project2"
+    },
+    {
+        id: "p3",
+        title: "My Creative Project 3",
+        description: "A creative endeavor demonstrating design and front-end skills.",
+        image: "/placeholder_project3.png",
+        tags: ["HTML", "CSS", "Design"],
+        demo: "#",
+        repo: "https://github.com/AndrewAtherton/project3"
+    },
 ]

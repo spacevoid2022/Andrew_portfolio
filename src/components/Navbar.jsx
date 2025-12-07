@@ -1,14 +1,14 @@
 export default function Navbar() {
-    return (
-        <header className={"sticky top-0 z-40 backdrop-blur-md border-b border-gray-200"}>
-            <nav className={"max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4"}>
-                <a href={"#"} className={"font-semibold tracking-tight text-white"}>
+    return(
+        <header className={"sticky top-0 z-40 backdrop-blur border-b border-white/10 bg-neutral-950/70"}>
+            <nav className={"mx-auto flex max-w-5xl items-center justify-between px-4 py-3"}>
+                <a href={"#"} className={"font-semibold tracking-tight"}>
                     Andrew Atherton
                 </a>
-                <ul className={"flex space-x-6"}>
-                    <li><a className={"text-gray-300 hover:text-white transition-colors"} href={"#about"}>About Me</a></li>
-                    <li><a className={"text-gray-300 hover:text-white transition-colors"} href={"#projects"}>Projects</a></li>
-                    <li><a className={"text-gray-300 hover:text-white transition-colors"} href={"#experience"}>Experience</a></li>
+                <ul className={"flex gap-5 text-sm text-neutral-300"}>
+                    <li><a className={"hover:text-white"} href={"#about"}>About me</a></li>
+                    <li><a className={"hover:text-white"} href={"#projects"}>Projects</a></li>
+                    <li><a className={"hover:text-white"} href={"#experience"}>Experience</a></li>
                 </ul>
             </nav>
         </header>
